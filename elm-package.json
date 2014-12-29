@@ -1,14 +1,13 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/USER/PROJECT.git",
+    "summary": "Gorgeous keyboard shortcuts to go with your gorgeous FRP'd code!",
+    "repository": "https://github.com/joefiorini/elm-mousetrap.git",
     "license": "BSD3",
     "source-directories": [
         "src"
     ],
     "exposed-modules": [
-      "Mousetrap",
-      "Native.Mousetrap"
+      "Mousetrap"
     ],
     "native-modules": true,
     "dependencies": {
