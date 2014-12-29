@@ -78,7 +78,11 @@ function resetState() {
 function handleMatch(keys, modifiers, e) {
   var keyString = keys.join(" ");
 
-  console.log('starting match', keyString);
+  if (Mousetrap.stopCallback(e, e.target || e.srcElement)) {
+    resetState();
+    return "";
+  }
+
   if (modifiers.length > 0) {
     keyString = modifiers.reduce(function(modStr, mod) {
       return mod + "+" + modStr;
@@ -111,7 +115,7 @@ Mousetrap.handleKey = function(character, modifiers, e) {
     clearTimeout(previousTimeout);
   }
 
-  previousTimeout = setTimeout(handleMatch.bind(null, pendingKeys, modifiers, e), 100);
+  previousTimeout = setTimeout(handleMatch.bind(null, pendingKeys, modifiers, e), 50);
 };
 
 module.exports = additions;
