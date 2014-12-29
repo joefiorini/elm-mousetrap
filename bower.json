@@ -1,0 +1,19 @@
+{
+  "name": "elm-mousetrap",
+  "version": "0.0.0",
+  "authors": [
+    "Joe Fiorini <joe@joefiorini.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mousetrap": "~1.4.6"
+  }
+}
